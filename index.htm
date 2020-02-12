@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tp01</title>
+    <title>Travail pratique 01</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <section class="global">
+            <h1 class="h1-header">Travail pratique 01</h1>
+            <h2 class="h2-header">Tommy Le Ha - gr.000001</h2>
+
+        </section>
+        <div>
+            <div>
+                <p class="texte-header">Session 2020</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id='menu'>
+        <input id="checkMenu" type="checkbox">
+        <label id="btnMenu" for="checkMenu">&#9776;</label>
+        <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Vero</a></li>
+            <li><a href="">Aperiam</a></li>
+            <li><a href="">Reprehenderit</a></li>
+            <li><a href="">Incidunt</a></li>
+            <li><a href="">Est</a></li>
+        </ul>
+
+        <input id="checkRecherche" type="checkbox">
+        <input class="barreRecherche" type="text" placeholder="Recherche..." name="btnRecherche">
+        <label id="btnRecherche" for="checkRecherche">&#8981;</label>
+        <label id="annulerRecherche" for="checkRecherche">&#x2715;</label>
+
+    </nav>
+    <main>
+        <section class="global">
+
+            <h1>Section 01</h1>
+
+            <p> a </p>
+            <p> b </p>
+            <p> c </p>
+            <p> d </p>
+
+
+        </section>
+    </main>
+
+    <footer id='pied-page'>
+        <section class="global">
+            <ul>
+                <li>Lorem, ipsum</li>
+                <li>Soluta, distinctio</li>
+                <li>Non, praesentium</li>
+                <li>Cupiditate, deserunt</li>
+                <li>Error, laborum</li>
+            </ul>
+            <ul>
+                <li>Dolore, architecto</li>
+                <li>Illo, ipsum</li>
+                <li>Impedit, laborum</li>
+                <li>Dolores, quisquam</li>
+                <li>Cupiditate, dolores</li>
+            </ul>
+            <ul>
+                <li>Distinctio, iste</li>
+                <li>Porro, repellat</li>
+                <li>Cumque, eligendi</li>
+                <li>Suscipit, enim</li>
+                <li>Sapiente, impedit</li>
+            </ul>
+            <ul>
+                <li>Voluptates, culpa</li>
+                <li>Harum, adipisci</li>
+                <li>Recusandae, ipsam</li>
+                <li>Delectus, dolores</li>
+                <li>Animi, voluptatum</li>
+            </ul>
+        </section>
+    </footer>
 </body>
+<script>
+    window.addEventListener('load', function () {
+        let elmChkMenu = document.querySelector('#checkMenu')
+        let elmBtnMenu = document.querySelector('#btnMenu')
+
+        window.addEventListener('resize', function () {
+            // console.log(window.innerWidth)
+            if (window.innerWidth >= 500) {
+                elmChkMenu.checked = false
+            }
+        })
+    })
+</script>
+
 </html>
