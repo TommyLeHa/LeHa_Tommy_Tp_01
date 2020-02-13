@@ -237,7 +237,7 @@ Voici un exemple
 /* ------------------------------------------------------------------------------ */
 /* Un  @extend permet d'hériter des propriétés CSS d'un autre sélecteur           */
 /* ------------------------------------------------------------------------------ */
-.small-uppercase, .modal-background, .product-link, .image-pattern {
+.small-uppercase, .modal-background, .product-link, .image-pattern, .texte-header {
   color: lightslategrey;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -415,6 +415,58 @@ main section p {
 /* ------------------------------------------------------------
 # Entete
 --------------------------------------------------------------*/
+/*!
+Auteur: Tommy Le Ha
+Description: Fichier entête de la page web
+Version: 1.0.0
+*/
+/* Ajout d'une extension avec extend.scss */
+.texte-header {
+  font-size: 2em;
+  color: dodgerblue;
+}
+
+/* Barre d'information et zone de recherche sur l'entête de la page */
+#btnRecherche {
+  font-size: 2em;
+  color: cornsilk;
+  margin-right: 1%;
+}
+
+#annulerRecherche {
+  font-size: 1.5em;
+  color: cornsilk;
+  margin-right: 1%;
+  line-height: 40px;
+  display: none;
+}
+
+.barreRecherche {
+  display: none;
+}
+
+#checkRecherche {
+  display: none;
+}
+
+#checkRecherche:checked ~ .barreRecherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 248, 220, 0.9);
+  position: absolute;
+  width: 90%;
+  padding: 9px;
+}
+
+#checkRecherche:checked ~ #btnRecherche {
+  display: none;
+}
+
+#checkRecherche:checked ~ #annulerRecherche {
+  display: block;
+}
+
 /* ------------------------------------------------------------
 # Menu
 --------------------------------------------------------------*/

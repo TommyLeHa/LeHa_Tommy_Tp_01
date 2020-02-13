@@ -1,0 +1,51 @@
+/*!
+Auteur: Tommy Le Ha
+Description: Fichier entête de la page web
+Version: 1.0.0
+*/
+
+/* Ajout d'une extension avec extend.scss */
+.texte-header{
+    font-size: 2em;
+    color: dodgerblue;
+    @extend .small-uppercase;
+}
+/* Barre d'information et zone de recherche sur l'entête de la page */
+//Bouton recherche
+#btnRecherche{
+    font-size: 2em;
+    color: cornsilk;
+    margin-right: 1%;
+}
+//Bouton annuler de recherche
+#annulerRecherche{
+    font-size: 1.5em;
+    color: cornsilk;
+    margin-right: 1%;
+    line-height: 40px;
+    display: none;
+}
+//Barre de recherche
+.barreRecherche{
+    display: none;
+}
+//Checkbox de l'icône de recherche
+#checkRecherche{
+    display: none;
+}
+//Checkbox de l'icône de recherche et de la barre de recherche
+#checkRecherche:checked ~ .barreRecherche{
+    display: flex;
+    background-color: rgba($color: cornsilk, $alpha: 0.9);
+    position: absolute;
+    width: 90%;
+    padding: 9px;
+}
+//Checkbox de l'icône de recherche et du bouton de recherche
+#checkRecherche:checked ~ #btnRecherche{
+    display:none;
+}
+//Checkbox de l'icône de recherche de du bouton d'annuler la recherche
+#checkRecherche:checked ~ #annulerRecherche{
+    display:block;
+}
