@@ -619,5 +619,140 @@ l'état checked est testé ici:
 /*--------------------------------------------------------------
 # Pied-page 
 ----------------------------------------------------------------*/
+/*
+Auteur: Tommy Le Ha
+Modifications du pied de page 
+*/
+#pied-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ccc9c9;
+}
+
+#pied-page section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#pied-page ul {
+  position: relative;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  border: 3px dotted #993f3f;
+}
+
+#pied-page ul:before {
+  background: #cce6ff;
+  color: rgba(0, 0, 0, 0.5);
+  content: "Mobile";
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 1rem;
+  left: 0;
+  letter-spacing: 0.2em;
+  line-height: 1rem;
+  padding: 0 0.5em;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  top: 0;
+}
+
+#pied-page ul li {
+  padding: 3px;
+}
+
+@media screen and (min-width: 500px) {
+  #pied-page section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #pied-page ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    text-align: center;
+    position: relative;
+  }
+  #pied-page ul:before {
+    background: #66b3ff;
+    color: rgba(0, 0, 0, 0.5);
+    content: "Ipad";
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 1rem;
+    left: 0;
+    letter-spacing: 0.2em;
+    line-height: 1rem;
+    padding: 0 0.5em;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pied-page section {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #pied-page ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    position: relative;
+  }
+  #pied-page ul:before {
+    background: #3399ff;
+    color: rgba(0, 0, 0, 0.5);
+    content: "Ordi";
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 1rem;
+    left: 0;
+    letter-spacing: 0.2em;
+    line-height: 1rem;
+    padding: 0 0.5em;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 0;
+  }
+}
+
 /*-------------------------------------------------------------- */
 /*# sourceMappingURL=style.css.map */

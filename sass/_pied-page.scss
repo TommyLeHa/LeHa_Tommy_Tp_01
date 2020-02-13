@@ -1,0 +1,71 @@
+/*
+Auteur: Tommy Le Ha
+Modifications du pied de page 
+*/
+
+
+#pied-page{
+    padding-top : 30px;
+    padding-bottom: 30px;
+    color : lighten($couleur_blanc,10%);
+    section{
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul {
+        //Ajout du mixin label modifié dans le ul du footer pour mobile
+        @include label("Mobile",#cce6ff );
+        padding : 10px;
+        list-style-type: none;
+        margin:0;
+        padding: 10px 0 10px 0;
+        flex :1;
+        text-align : center;
+        border: 3px dotted lighten($couleur_rouge, 17%);
+        ;
+        li {
+           padding : 3px;
+        }
+        
+    }
+}
+
+
+@media screen and (min-width: 500px)
+{
+#pied-page {
+    section{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    //Ajout du mixin label modifié dans le ul du footer pour Ipad
+    ul {
+            flex : 1 1 40%; // pour un wrap sur 2 colonnes
+            text-align : center;
+            @include label("Ipad",#66b3ff );
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #pied-page {
+        section {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        //Ajout du mixin label modifié dans le ul du footer pour grand écran
+        ul {
+            flex : 1 1 25%; // on a plus de wrap et 4 colonnes
+            @include label("Ordi",#3399ff ); 
+        }
+        
+    }
+}
