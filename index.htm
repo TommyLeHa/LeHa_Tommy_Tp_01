@@ -5,56 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travail pratique 01</title>
+    <title>Exercice #5</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap"
+        rel="stylesheet">
+    <script type='module' src="./mjs/main.mjs"></script>
 </head>
 
 <body>
     <header>
         <section class="global">
-            <h1 class="h1-header">Travail pratique 01</h1>
-            <h2 class="h2-header">Tommy Le Ha - gr.000001</h2>
-
+            <h1>Exercice #5</h1>
+            <h2>Animation et carrousel</h2>
         </section>
-        <div>
-            <div>
-                <p class="texte-header">Session 2020</p>
-            </div>
-        </div>
     </header>
 
     <nav id='menu'>
-        <input id="checkMenu" type="checkbox">
-        <label id="btnMenu" for="checkMenu">&#9776;</label>
-        <ul>
-            <li><a href="">Lorem</a></li>
-            <li><a href="">Vero</a></li>
-            <li><a href="">Aperiam</a></li>
-            <li><a href="">Reprehenderit</a></li>
-            <li><a href="">Incidunt</a></li>
-            <li><a href="">Est</a></li>
-        </ul>
+            <input id="checkMenu" type="checkbox">
+            <label id="btnMenu" for="checkMenu">&#9776;</label>
+            <ul class='global'>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Vero</a></li>
+                <li><a href="">Aperiam</a></li>
+                <li><a href="">Reprehenderit</a></li>
+                <li><a href="">Incidunt</a></li>
+                
 
-        <input id="checkRecherche" type="checkbox">
-        <input class="barreRecherche" type="text" placeholder="Recherche..." name="btnRecherche">
-        <label id="btnRecherche" for="checkRecherche">&#8981;</label>
-        <label id="annulerRecherche" for="checkRecherche">&#x2715;</label>
-
+            </ul>
+            <div id='recherche' class='global'>
+                <input id="chkRecherche" type="checkbox">
+                <input type='text' id='txtRecherche' placeholder='Recherche'> 
+                <label id="btnRecherche" for="chkRecherche"></label>
+            </div>
     </nav>
     <main>
         <section class="global">
-
-            <h1>Section 01</h1>
-
-            <p> a </p>
-            <p> b </p>
-            <p> c </p>
-            <p> d </p>
-
-
+            <h1>Bouton Sass avec Mixin</h1>
+            <p>Utilisez SASS pour détecter vos couleurs d'arrière-plan et d'autres styles et appliquez-les à vos boutons pour une
+            cohérence globale survole et états actifs.</p>
+            <section class='bouton'>
+                <a href="#" class="btn btn-vert">Bouton vert </a>
+                <a href="#" class="btn btn-bleu">Bouton bleu</a>
+                <a href="#" class="btn btn-jaune">Bouton jaune</a>
+                <a href="#" class="btn btn-rouge">Bouton rouge</a>
+            </section>
+            <div class='mon_triangle'></div>
         </section>
+        <section class="mon-slider"></section>
+
     </main>
 
     <footer id='pied-page'>
@@ -90,6 +89,7 @@
         </section>
     </footer>
 </body>
+ 
 <script>
     window.addEventListener('load', function () {
         let elmChkMenu = document.querySelector('#checkMenu')
@@ -103,5 +103,4 @@
         })
     })
 </script>
-
 </html>

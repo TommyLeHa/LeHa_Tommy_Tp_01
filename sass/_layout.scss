@@ -1,9 +1,11 @@
 body {
     width: 100vw;
     min-height :100vh;
+    font-family: 'Roboto', sans-serif;
     // le layout est entièrement flexbox
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header,
@@ -15,7 +17,7 @@ footer {
     justify-content: center;
 }
 header {
-    z-index: 999;
+    //z-index: 999;
    // flex:1;
 }
 
@@ -33,7 +35,7 @@ main {
     
     padding-top : 3em;
     display : flex;
-    flex-direction: column; // pour pousser le footer en bas du viewport
+    flex-direction: column; // pour pouuser le footer en bas du viewport
     align-items: center; // pour que la section .global soit centrée
     justify-content: center;
     flex : 1 1 auto; // pour pousser le footer en bas du viewport
@@ -56,5 +58,15 @@ main {
 
 .global {
     width: 95%;
+
+}
+
+// ---------------------------------------------------------------- un premier point de rupture 
+@media screen and (min-width:600px) {
+    .global {
+        width: 80%;
+    }
+
+
 
 }

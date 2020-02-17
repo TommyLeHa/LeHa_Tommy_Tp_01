@@ -1,13 +1,14 @@
 /*
-Auteur: Tommy Le Ha
-Modifications du pied de page 
+mobile : 1 colonne
+tablette : 2 colonnes
+desktop : 4 colonnes
 */
 
 
 #pied-page{
     padding-top : 30px;
     padding-bottom: 30px;
-    color : lighten($couleur_blanc,10%);
+    color : darken($couleur_blanc,40%);
     section{
         display : flex;
         flex-direction: column;
@@ -15,8 +16,7 @@ Modifications du pied de page
         justify-content: space-around;
     }
     ul {
-        //Ajout du mixin label modifié dans le ul du footer pour mobile
-        @include label("Mobile",#cce6ff );
+        width : 50%;
         padding : 10px;
         list-style-type: none;
         margin:0;
@@ -24,7 +24,19 @@ Modifications du pied de page
         flex :1;
         text-align : center;
         border: 3px dotted lighten($couleur_rouge, 17%);
-        ;
+        &:nth-of-type(1){
+            @include label("Un", #0ff, white);
+            }
+        &:nth-of-type(2) {
+            @include label("Deux", rgb(41, 80, 80), white);
+            }
+        &:nth-of-type(3) {
+            @include label("Trois", rgb(46, 18, 6), white);
+            }
+        &:nth-of-type(4) {
+            @include label("Quatre", rgb(65, 107, 40), white);
+            }
+
         li {
            padding : 3px;
         }
@@ -44,11 +56,9 @@ Modifications du pied de page
         align-items: center;
         align-content: center;
     }
-    //Ajout du mixin label modifié dans le ul du footer pour Ipad
     ul {
             flex : 1 1 40%; // pour un wrap sur 2 colonnes
             text-align : center;
-            @include label("Ipad",#66b3ff );
         }
         
     }
@@ -61,11 +71,9 @@ Modifications du pied de page
             flex-direction: row;
             justify-content: space-around;
         }
-        //Ajout du mixin label modifié dans le ul du footer pour grand écran
+
         ul {
             flex : 1 1 25%; // on a plus de wrap et 4 colonnes
-            @include label("Ordi",#3399ff ); 
         }
-        
     }
 }

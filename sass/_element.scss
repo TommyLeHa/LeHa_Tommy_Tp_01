@@ -1,13 +1,12 @@
-/*
-Auteur: Tommy Le Ha
-Les éléments simples.  
-On définit ici des règles de styles générales 
+/* Les éléments simples.  
+On définit ici des règles de styles générales qui peuvent être enrichies ailleur.
+Ces règles servent de bases  
 */
 
 header {
-    color : #307dbd;
+    color : #438dca;
 
-}
+
 h1 {
     font-size: 3em;
     padding: 1rem 0 .1rem 0;
@@ -19,3 +18,21 @@ h2 {
     padding: 0 0 20px 0;
     margin: 0;
 }
+
+}
+@media screen and (min-width:600px) {
+    header {
+        h1 {
+            font-size: 5em;
+        
+            margin:0;
+        }
+
+        h2 {
+                font-size: 1em;
+             
+                margin :0;
+        }
+    }
+}
+

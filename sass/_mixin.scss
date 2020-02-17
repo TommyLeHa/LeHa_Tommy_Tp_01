@@ -1,12 +1,6 @@
-/*!
-Auteur: Tommy Le Ha
-Description: Fichier mixin
-Version: 1.0.0
-*/
-
-/* ------------------------------------------------*/
-/* -----------Premier exemple mixin----------------*/
-/* ------------------------------------------------*/
+/* ----------------------------------------- */
+/* ------  Un premier exemple de mixin ----- */
+/* ----------------------------------------- */
 
 @mixin overlay() {
     bottom: 0;
@@ -89,7 +83,7 @@ d'en définir un occasionnellement, vous pouvez créer des paramètres facultati
 ------------------------------------------------------------------------------------- */
 
 
-//Modification de la couleur,de la typographie du texte et du font-size//
+
 @mixin label($text: "Code", $background: #aaa, $color: rgba(black, 0.5)) {
     position: relative;
     &:before{
@@ -97,15 +91,15 @@ d'en définir un occasionnellement, vous pouvez créer des paramètres facultati
       color: $color;
       content: $text;
       display: inline-block;
-      font-size: 1rem;
+      font-size: 0.6rem;
       font-weight: 700;
       height: 1rem;
       left: 0;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.1em;
       line-height: 1rem;
       padding: 0 0.5em;
       position: absolute;
-      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
       top: 0;
     }
   }
@@ -216,13 +210,15 @@ Un exemple de cas d'utilisation est celui des media queries.
 Voici un exemple
 */
 
-@mixin small() {
-    @media only screen and (max-width: 320px) {
+@mixin media($largeur) {
+    @media only screen and (min-width: $largeur) {
         @content;
     }
 }
-
+/*
 @include small {
     // Le code css pour les petit écran serait inclus ici
 }
+
+*/
 

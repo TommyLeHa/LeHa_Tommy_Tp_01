@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------------------ */
 /* Un  @extend permet d'hériter des propriétés CSS d'un autre sélecteur           */
 /* ------------------------------------------------------------------------------ */
-
+/*
 .small-uppercase{
     color: lightslategrey;
     font-size: 10px;
@@ -23,7 +23,7 @@
   .image-pattern{
     @extend .small-uppercase;
   }
-  
+  */
   // le code css qui sera généré
   /*
   .small-uppercase,
