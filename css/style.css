@@ -524,7 +524,7 @@ l'état checked est testé par un le sélecteur suivant:
 #checkMenu:checked ~ #btnMenu {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: #0f0;
+  color: #dfbc49;
 }
 
 #checkMenu {
