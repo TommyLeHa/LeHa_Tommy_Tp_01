@@ -1,0 +1,12 @@
+.tableau {
+    display:grid;
+    width: 50%;
+    margin-bottom: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 3px solid rgb(54, 54, 54);
+ 
+    * {
+        height: 100%;
+    }
+}
