@@ -768,9 +768,42 @@ l'état checked est testé par un le sélecteur suivant:
   height: 100%;
 }
 
-.tableau div:hover .image {
+.tableau .image {
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.tableau .Vancouver:hover .image {
   background-color: #302f2f;
-  opacity: 0.9;
+  opacity: 0.5;
+}
+
+.tableau .Buffalo:hover .image {
+  background-color: #302f2f;
+  opacity: 0.5;
+}
+
+.tableau .Winnipeg:hover .image {
+  background-color: #302f2f;
+  opacity: 0.5;
+}
+
+.tableau .NewYork:hover .image {
+  background-color: #302f2f;
+  opacity: 0.5;
+}
+
+.tableau .Floride:hover .image {
+  background-color: #302f2f;
+  opacity: 0.5;
+}
+
+.tableau .Calgary:hover .image {
+  background-color: #302f2f;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 600px) {
