@@ -881,9 +881,9 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(1):before {
-  background: #0ff;
-  color: white;
-  content: "Un";
+  background: #edfafa;
+  color: black;
+  content: "Métropolitaine";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -902,9 +902,9 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(2):before {
-  background: #295050;
-  color: white;
-  content: "Deux";
+  background: #edfafa;
+  color: black;
+  content: "Atlantique";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -923,9 +923,9 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(3):before {
-  background: #2e1206;
-  color: white;
-  content: "Trois";
+  background: #edfafa;
+  color: black;
+  content: "Centrale";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -944,9 +944,9 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(4):before {
-  background: #416b28;
-  color: white;
-  content: "Quatre";
+  background: #edfafa;
+  color: black;
+  content: "Pacifique";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -961,6 +961,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul li {
+  color: white;
   padding: 3px;
 }
 

@@ -25,19 +25,20 @@ desktop : 4 colonnes
         text-align : center;
         border: 3px dotted lighten($couleur_rouge, 17%);
         &:nth-of-type(1){
-            @include label("Un", #0ff, white);
+            @include label("Métropolitaine", rgb(237, 250, 250), black);
             }
         &:nth-of-type(2) {
-            @include label("Deux", rgb(41, 80, 80), white);
+            @include label("Atlantique", rgb(237, 250, 250), black);
             }
         &:nth-of-type(3) {
-            @include label("Trois", rgb(46, 18, 6), white);
+            @include label("Centrale", rgb(237, 250, 250), black);
             }
         &:nth-of-type(4) {
-            @include label("Quatre", rgb(65, 107, 40), white);
+            @include label("Pacifique", rgb(237, 250, 250), black);
             }
 
         li {
+           color:white;
            padding : 3px;
         }
         
