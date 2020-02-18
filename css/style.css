@@ -754,16 +754,22 @@ l'état checked est testé par un le sélecteur suivant:
   display: -ms-grid;
   display: grid;
   width: 50%;
-  margin-bottom: 3%;
+  margin-bottom: 6%;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em;
   border: 3px solid #363636;
 }
 
 .tableau * {
   height: 100%;
+}
+
+.tableau div:hover {
+  background-color: #302f2f;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1108,8 +1114,8 @@ scroll-snap-type: mandatory;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin-right: 50px;
   border-radius: 10px;
   background: #eee;
@@ -1155,8 +1161,6 @@ scroll-snap-type: mandatory;
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: 100%;
 }

@@ -56,8 +56,8 @@ scroll-snap-type: mandatory;
 .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     margin-right: 50px;
     border-radius: 10px;
     background: #eee;
@@ -93,7 +93,7 @@ scroll-snap-type: mandatory;
 }
 
 img {
-    object-fit: cover;
+    //object-fit: cover;
     //position: absolute;
     //top: 0;
     //left: 0;
