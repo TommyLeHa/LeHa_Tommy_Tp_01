@@ -1,7 +1,6 @@
 body {
     width: 100vw;
     min-height :100vh;
-    font-family: 'Roboto', sans-serif;
     // le layout est entièrement flexbox
     display: flex;
     flex-direction: column;
@@ -16,19 +15,18 @@ footer {
     display: flex;
     justify-content: center;
 }
-header {
+//header {
     //z-index: 999;
-   // flex:1;
-}
+   // flex:1;}
 
 header,
 footer {
     // chaque section pricipale une couleur en bg sur 100vw
-    background-color: lighten($couleur_rouge, 20%);
+    background-color: $couleur_gris;
 }
 
 nav {
-    background-color: darken($couleur_rouge, 5%);
+    background-color: $couleur_grisfonce;
 }
 
 main {

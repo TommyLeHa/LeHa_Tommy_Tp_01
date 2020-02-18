@@ -311,7 +311,7 @@ On définit ici des règles de styles générales qui peuvent être enrichies ai
 Ces règles servent de bases  
 */
 header {
-  color: #438dca;
+  color: #f1f1f1;
 }
 
 header h1 {
@@ -338,12 +338,19 @@ header h2 {
 }
 
 /* ------------------------------------------------------------
+/* ------------------------------------------------------------
+# Typographie 
+-------------------------------------------------------------- */
+body {
+  font-family: "Montserrat",sans-serif;
+}
+
+/* ------------------------------------------------------------
 # Layout
 -------------------------------------------------------------- */
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,11 +376,11 @@ footer {
 
 header,
 footer {
-  background-color: #ba5252;
+  background-color: #4e4e4e;
 }
 
 nav {
-  background-color: #652828;
+  background-color: #302f2f;
 }
 
 main {
@@ -474,7 +481,7 @@ main section p {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   min-height: 100%;
-  background-color: #471c1c;
+  background-color: #302f2f;
   border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 200px;
@@ -552,7 +559,7 @@ l'état checked est testé par un le sélecteur suivant:
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: #522121;
+  background-color: #302f2f;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -577,7 +584,7 @@ l'état checked est testé par un le sélecteur suivant:
   height: auto;
   -webkit-transition: max-height 1s;
   transition: max-height 1s;
-  background-color: #522121;
+  background-color: #302f2f;
 }
 
 #menu ul li {
@@ -604,7 +611,7 @@ l'état checked est testé par un le sélecteur suivant:
 }
 
 #menu ul li a:hover {
-  background-color: #ba5252;
+  background-color: #302f2f;
   color: #fff;
 }
 
@@ -637,7 +644,7 @@ l'état checked est testé par un le sélecteur suivant:
     width: 80%;
     margin-left: 5%;
     margin-right: 0%;
-    padding-left: 10pxpx;
+    padding-left: 10px;
     display: none;
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
@@ -735,7 +742,7 @@ l'état checked est testé par un le sélecteur suivant:
     z-index: 1;
   }
   #menu ul li a:hover {
-    background-color: #9c3d3d;
+    background-color: #302f2f;
   }
 }
 
@@ -1069,7 +1076,7 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background: #813939;
+  background: silver;
   border-radius: 10px;
 }
 

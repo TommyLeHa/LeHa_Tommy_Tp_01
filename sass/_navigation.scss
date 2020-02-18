@@ -41,7 +41,7 @@
         display : none;
         align-self: stretch;
         min-height : 100%;
-        background-color: darken($couleur_rouge, 13%);
+        background-color: $couleur_grisfonce;
         border : none;
         flex : 1 1 200px;
         opacity : .8;
@@ -117,7 +117,7 @@ l'état checked est testé par un le sélecteur suivant:
     display: flex;
     position: relative;
     //top: 110px;
-    background-color: darken($couleur_rouge, 10%);
+    background-color: $couleur_grisfonce;
     align-items: flex-start;
     height: 40px;
     // order : -10;
@@ -136,7 +136,7 @@ l'état checked est testé par un le sélecteur suivant:
         max-height: 0px; // on cache le menu mobile
         height: auto; // la hauteur nécessaire pour afficher uniquement les choix de menu 
         transition: max-height 1s; // max-height sera animé
-        background-color: darken($couleur_rouge, 10%); // une couleur bg est donnée à ul
+        background-color: $couleur_grisfonce; // une couleur bg est donnée à ul
 
         li {
             opacity: 0;
@@ -156,7 +156,7 @@ l'état checked est testé par un le sélecteur suivant:
                 color: $couleur_blanc;
 
                 &:hover {
-                    background-color: lighten($couleur_rouge, 20%);
+                    background-color: $couleur_grisfonce;
                     color: #fff;
                 }
 
@@ -192,7 +192,7 @@ l'état checked est testé par un le sélecteur suivant:
         width : 80%;
         margin-left: 5%;
         margin-right : 0%;
-        padding-left: 10pxpx;
+        padding-left: 10px;
         display: none;
         align-self: stretch;
         
@@ -264,7 +264,7 @@ l'état checked est testé par un le sélecteur suivant:
                         
                     
                         &:hover {
-                            background-color: lighten($couleur_rouge, 10%)
+                            background-color: $couleur_grisfonce;
                         }
                     }
                 }
