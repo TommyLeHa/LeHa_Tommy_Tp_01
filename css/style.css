@@ -753,12 +753,13 @@ l'état checked est testé par un le sélecteur suivant:
 .tableau {
   display: -ms-grid;
   display: grid;
-  width: 50%;
+  width: 30%;
   margin-bottom: 6%;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
   grid-gap: 1em;
   border: 3px solid #363636;
 }
@@ -767,9 +768,37 @@ l'état checked est testé par un le sélecteur suivant:
   height: 100%;
 }
 
-.tableau div:hover {
+.tableau div:hover .image {
   background-color: #302f2f;
-  color: #fff;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 600px) {
+  .tableau {
+    display: -ms-grid;
+    display: grid;
+    width: 50%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tableau {
+    display: -ms-grid;
+    display: grid;
+    width: 80%;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 1em;
+  }
 }
 
 /*--------------------------------------------------------------

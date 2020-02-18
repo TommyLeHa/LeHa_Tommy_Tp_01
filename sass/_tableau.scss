@@ -1,9 +1,10 @@
 .tableau {
     display:grid;
-    width: 50%;
+    width: 30%;
     margin-bottom: 6%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
     grid-gap: 1em;
     border: 3px solid rgb(54, 54, 54);
  
@@ -12,10 +13,30 @@
     }
 
     div{
-        &:hover {
+        &:hover .image {
             background-color: $couleur_grisfonce;
-            color: #fff;
+            opacity: 0.9;
         }
     }
+   
 }
-
+@media screen and (min-width:600px){
+    .tableau{
+    display: grid;
+    width: 50%; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 1em;
+    }
+    }
+@media screen and (min-width:900px){
+    .tableau{
+    display: grid;
+    width: 80%; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 1em;
+    }
+    }
