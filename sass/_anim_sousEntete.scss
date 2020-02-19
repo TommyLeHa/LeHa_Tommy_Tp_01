@@ -1,0 +1,19 @@
+@keyframes animsousEntete{
+   0% {
+       transform: translateX(-500px);
+       opacity: 0;
+       
+   }
+   50%{
+       transform:translateX(300px);
+       opacity: 0.5;
+   }
+   100%{
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+
+.animsousEntete {
+    animation : animsousEntete 3s; 
+}

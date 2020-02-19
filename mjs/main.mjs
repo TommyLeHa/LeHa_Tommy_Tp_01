@@ -1,13 +1,16 @@
 //Permet de gérer les fichiers du slider
 import {anim_entete} from "./anim_entete.mjs";
+import {anim_sousEntete} from "./anim_sousEntete.mjs";
 import { Slider } from "./Slider.mjs";
 import { config_slider } from "./config_slider.mjs";
+
 let elmEntete = document.querySelector("header .global");
-//let elmsousEntete = document.querySelector("header .global h2");
+let elmsousEntete = document.querySelector("header .global ");
 const animEntete = new anim_entete(elmEntete);
-//const animsousEntete = new anim_entete(elmsousEntete);
+const animsousEntete = new anim_sousEntete(elmsousEntete);
 animEntete.anim();
-//animEntete.animsousEntete();
+animsousEntete.animsousEntete();
+
 const elmSlider = document.querySelector('.mon-slider')
 console.log(elmSlider.tagName)
 let mon_slider = new Slider(elmSlider, config_slider)

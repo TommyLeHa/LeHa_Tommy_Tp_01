@@ -1,24 +1,16 @@
 @keyframes animEntete{
     from {
-        transform : translateX(500px);
+        transform : translateX(600px);
+        opacity: 0;
+        color: rgb(30, 39, 80);
     }
     to{
         transform : translateX(0px);
+        opacity: 1;
+        color: rgb(223, 225, 235);
     }
 }
 
-@keyframes animsousEntete{
-    from {
-        transform : translateX(500px);
-    }
-    to{
-        transform : translateX(0px);
-    }
-}
 .animEntete {
-    animation : animEntete 1s; 
-}
-
-.animsousEntete {
-    animation : animsousEntete 1s; 
+    animation : animEntete 2s; 
 }
