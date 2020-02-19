@@ -7,6 +7,18 @@
     }
 }
 
+@keyframes animsousEntete{
+    from {
+        transform : translateX(500px);
+    }
+    to{
+        transform : translateX(0px);
+    }
+}
 .animEntete {
     animation : animEntete 1s; 
+}
+
+.animsousEntete {
+    animation : animsousEntete 1s; 
 }

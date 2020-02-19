@@ -13,4 +13,8 @@ anim(){
     elmTitre.classList.add('animEntete')
 }
 
+animsousEntete(){
+  let elmTitre = this.elmsousEntete.children[1]
+  elmTitre.classList.add('animsousEntete')
+}
 }

@@ -21,26 +21,6 @@
     font-size: 1.5em;
 }
 
-.btn-vert {
-    @extend %btn;
-    @include bouton-bg($couleur_vert);
-}
-
-.btn-bleu {
-    @extend %btn;
-    @include bouton-bg($couleur_bleu);
-}
-
-.btn-jaune {
-    @extend %btn;
-    @include bouton-bg($couleur_jaune);
-}
-
-.btn-rouge {
-    @extend %btn;
-    @include bouton-bg($couleur_rouge);
-}
-
 .bouton {
   width : 100%;
   height : 200px;
