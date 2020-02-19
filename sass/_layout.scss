@@ -37,7 +37,7 @@ main {
     align-items: center; // pour que la section .global soit centrée
     justify-content: center;
     flex : 1 1 auto; // pour pousser le footer en bas du viewport
-    background-color: lighten($couleur_grisfonce, 20%);
+    background-color: darken($couleur_or, 5%);
     
     section {
         display : flex;
