@@ -16,15 +16,15 @@
         transition: .5s ease;
         backface-visibility: hidden;
     }
-    .Vancouver:hover .image {
+    .Colorado:hover .image {
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }
-    .Buffalo:hover .image {
+    .NewJersey:hover .image {
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }
-    .Winnipeg:hover .image {
+    .Chicago:hover .image {
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }
@@ -32,11 +32,11 @@
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }
-    .Floride:hover .image {
+    .LosAngeles:hover .image {
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }
-    .Calgary:hover .image {
+    .SaintLouis:hover .image {
         background-color: $couleur_grisfonce;
         opacity: 0.5;     
     }

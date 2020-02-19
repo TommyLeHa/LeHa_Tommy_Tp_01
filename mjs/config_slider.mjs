@@ -6,29 +6,29 @@ export const config_slider = {
 
     list_slide : [
         {
-            titre : 'Canadiens',
-            sousTitre : 'Montreal',
-            img : './img/01_Canadiens.png'
+            titre : 'Vegas',
+            sousTitre : 'Golden Knights',
+            img : './img/09_Vegas.png'
         },
         {
-            titre : 'Blue Jackets',
-            sousTitre : 'Columbus',
-            img : './img/02_BlueJackets.png'
+            titre : 'Leafs',
+            sousTitre : 'Toronto',
+            img : './img/10_Toronto.png'
         },
         {
-            titre : 'Predators',
-            sousTitre : 'Nashville',
-            img : './img/03_Predators.png'
+            titre : 'Hurricanes',
+            sousTitre : 'Caroline',
+            img : './img/11_Caroline.png'
         },
         {
-            titre : 'Bruins',
-            sousTitre : 'Boston',
-            img : './img/04_Bruins.png'
+            titre : 'Capitals',
+            sousTitre : 'Washington',
+            img : './img/12_Washington.png'
         },
         {
-            titre : 'Jets',
-            sousTitre : 'Winnipeg',
-            img : './img/05_Jets.png'
+            titre : 'Sharks',
+            sousTitre : 'San Jose',
+            img : './img/13_SanJose.png'
         }
         
 

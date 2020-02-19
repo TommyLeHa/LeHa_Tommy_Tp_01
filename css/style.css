@@ -775,17 +775,17 @@ l'état checked est testé par un le sélecteur suivant:
           backface-visibility: hidden;
 }
 
-.tableau .Vancouver:hover .image {
+.tableau .Colorado:hover .image {
   background-color: #302f2f;
   opacity: 0.5;
 }
 
-.tableau .Buffalo:hover .image {
+.tableau .NewJersey:hover .image {
   background-color: #302f2f;
   opacity: 0.5;
 }
 
-.tableau .Winnipeg:hover .image {
+.tableau .Chicago:hover .image {
   background-color: #302f2f;
   opacity: 0.5;
 }
@@ -795,12 +795,12 @@ l'état checked est testé par un le sélecteur suivant:
   opacity: 0.5;
 }
 
-.tableau .Floride:hover .image {
+.tableau .LosAngeles:hover .image {
   background-color: #302f2f;
   opacity: 0.5;
 }
 
-.tableau .Calgary:hover .image {
+.tableau .SaintLouis:hover .image {
   background-color: #302f2f;
   opacity: 0.5;
 }
